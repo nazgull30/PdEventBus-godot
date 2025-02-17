@@ -74,8 +74,7 @@ jobs:
           include: PdEventBus/PdEventBus.csproj
 
       - name: 📦 Build
-        run: dotnet build \
-          PdEventBus/PdEventBus.csproj -c Release
+        run: dotnet build PdEventBus/PdEventBus.csproj -c Release
 
       - name: 🔎 Get Package Path
         id: package-path
